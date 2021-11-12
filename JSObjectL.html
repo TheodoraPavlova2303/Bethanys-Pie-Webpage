@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+
+</head>
+<body>
+<script>
+
+ let fName ="Tedy";
+ let lName ="Pav";
+ let LinkedIn = "tedted"; 
+/*  This is how we create object literal in JavaScript
+we cam have functions as past of the object literals */
+
+ let person = {
+     fName: "Tedy",
+     lName: "Pav", 
+     LinkedIn: "tedted",
+     greet: function() {
+         console.log("My name is " + this.fName)
+     }
+ };
+/* we can print the properties of the object literal by saying person.fName
+we can also call a function which is part of the object in the following way*/
+ person.greet(); 
+ 
+</script>
+</body>
+</html>

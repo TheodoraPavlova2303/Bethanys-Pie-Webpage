@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Events</title>
+</head>
+<body>
+    <button id="click-me">Click me</button>
+    <script> 
+     window.addEventListener("DOMContentLoaded", function(e){
+       console.log("Page is loaded");
+
+       let btn = document.querySelector("#click-me"); 
+       // This is how you select the element to do the event listener to
+       btn.addEventListener("click", function(e) {
+          console.log("Button was clicked");
+       });
+     }); 
+    </script>
+    
+</body>
+</html>
